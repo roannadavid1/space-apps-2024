@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full h-full overflow-hidden">
-		<div class="flex flex-row justify-between h-16 text-white font-main">
+		<div class="flex flex-row justify-between items-center h-8 text-white font-main mb-8">
 			<div class="flex flex-row">
 				<button class="size-6 mr-4" @click="$router.back()">
 					<Pressable>
@@ -13,12 +13,19 @@
 					</Pressable>
 				</button>
 			</div>
+			<NuxtLink to="https://eyes.nasa.gov/apps/exo/#/" target="_blank">
+				<div class="flex items-center justify-center cursor-pointer h-8">
+					<Pressable class="flex items-center justify-center border border-amber-300 rounded-full px-5">
+						<img src="@/assets/images/satellite.svg" class="invert h-5 mr-2"/> More Exoplanets!
+					</Pressable>
+				</div>
+			</NuxtLink>
 		</div>
 		<div class="gallery overflow-scroll">
-			<div v-for="(type, index) in gallery_types" :class="[index == 0 ? 'mt-x2' : 'mt-8']">
-				<details open>
-					<summary class="flex flex-col mb-4">
-						<div class="flex flex-row justify-between cursor-pointer sticky top-0 z-10 font-main text-amber-300 text-xl bg-black">
+			<div v-for="(type, index) in gallery_types" :class="[index == 0 ? 'mt-2' : 'mt-8', index == gallery_types.length - 1 ? 'mb-8' : '']">
+				<details open class="bg-black">
+					<summary class="flex flex-col mb-4 sticky top-0 z-10 bg-black cursor-pointer">
+						<div class="flex flex-row justify-between cursor-pointer font-main text-amber-300 text-xl">
 							<h2>{{type.name}}</h2>
 							<div class="arrow">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -78,15 +85,6 @@ function goHome() {
 <style>
 .gallery {
 	height: calc(100% - 4rem);
-}
-
-details summary {
-	cursor: pointer;
-	transition: margin 500ms ease-out;
-}
-
-details[open] summary {
-	margin-bottom: 10px;
 }
 
 details[open] .arrow {
