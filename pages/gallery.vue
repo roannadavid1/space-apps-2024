@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="text-white">
         GALLERY
     </div>
 </template>
