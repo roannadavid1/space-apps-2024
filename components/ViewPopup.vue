@@ -1,7 +1,8 @@
 <template>
   <Popup @click="close" @blur="close" class="cursor-pointer">
     <img src="@/assets/images/close.svg" class="h-5 mb-4 float-right"/>
-    <div class="w-full aspect-square mb-4 bg-blue-400 flex items-center justify-center">
+    <div class="w-full aspect-square mb-4 bg-blue-400 flex items-center justify-center relative">
+      <p class="absolute -top-7">Hypothetical visualization</p>
       <NuxtImg class="w-full" :src="`/images/${item.image}.jpg`" loading="lazy"/>
     </div>
     <p class="mb-2 text-4xl font-main capitalize">{{item.name}}</p>

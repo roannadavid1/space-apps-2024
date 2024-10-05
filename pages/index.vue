@@ -21,7 +21,7 @@
 			</div>
 			<div class="w-60 h-12 mt-4 text-xl">
 				<Pressable @click="goGallery" class="font-main text-white bg-amber-400 shadow-md shadow-white/20 rounded-full p-2 flex items-center justify-center">
-					<img src="@/assets/images/gallery.svg" class="invert h-7 mr-2"/> Gallery
+					<img src="@/assets/images/gallery.svg" class="invert h-7 mr-2"/> Exoplanets
 				</Pressable>
 			</div>
 		</div>
