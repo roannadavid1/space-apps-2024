@@ -1,7 +1,7 @@
 <template>
 	<div class="w-full h-full overflow-hidden">
 		<div class="w-full h-full flex flex-col justify-center items-center overflow-hidden">
-			<h1 class="font-main text-white text-4xl text-center">Exoplanets</h1>
+			<h1 class="font-main text-white text-4xl text-center">Exoplanet Match</h1>
 			<div class="mt-4 flex flex-row font-main text-white">
 				&nbsp;
 				<p class="trivia text-center text-sm">"Exoplanets are planets outside of our solar system that usually orbit another planets."</p>
