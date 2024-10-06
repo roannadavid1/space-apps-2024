@@ -1,10 +1,4 @@
 {
-  "trivia_list": [
-    "Exoplanets are planets outside of our solar system that usually orbit another planets.",
-    "We know of thousands of exoplanets in the Milky Way galaxy",
-    "Exoplanets are detected and studied by telescopes on the ground and in space.",
-    "Proxima Centauri is the closest star to our own."
-  ],
   "types": [
     {
       "id": "terrestrial",
@@ -36,10 +30,12 @@
       "tagline": "A rocky world outside our solar system",
       "description": "TRAPPIST-1 e is a terrestrial exoplanet that orbits an M-type star. Its mass is 0.692 Earths, it takes 6.1 days to complete one orbit of its star, and is 0.02925 AU from its star. Its discovery was announced in 2017.",
       "discovery": "2017",
-      "radius": "0.92 x Earth",
-      "is_bigger": false,
-      "car_travel": "453 million years",
-      "distance": "41 light-years"
+      "radius_multiplier": 0.92,
+			"comparison": "Earth",
+      "is_bigger_than_earth": false,
+      "car_travel": "453",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "trappist-1-c",
@@ -49,10 +45,12 @@
       "tagline": "A potentially rocky world, larger than Earth",
       "description": "TRAPPIST-1 c is a super Earth exoplanet that orbits an M-type star. Its mass is 1.308 Earths, it takes 2.4 days to complete one orbit of its star, and is 0.0158 AU from its star. Its discovery was announced in 2016.",
       "discovery": "2016",
-      "radius": "1.097 x Earth",
-      "is_bigger": true,
-      "car_travel": "453 million years",
-      "distance": "41 light-years"
+			"radius_multiplier": 1.097,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "453",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "trappist-1-h",
@@ -62,10 +60,12 @@
       "tagline": "A potentially rocky world, larger than Earth",
       "description": "TRAPPIST-1 h is a terrestrial exoplanet that orbits an M-type star. Its mass is 0.326 Earths, it takes 18.8 days to complete one orbit of its star, and is 0.06189 AU from its star. Its discovery was announced in 2017.",
       "discovery": "2017",
-      "radius": "0.755 x Earth",
-      "is_bigger": false,
-      "car_travel": "453 million years",
-      "distance": "41 light-years"
+			"radius_multiplier": 0.755,
+			"comparison": "Earth",
+      "is_bigger_than_earth": false,
+      "car_travel": "453",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "trappist-1-d",
@@ -75,10 +75,12 @@
       "tagline": "A rocky world outside our solar system",
       "description": "TRAPPIST-1 d is a terrestrial exoplanet that orbits a M-type star. Its mass is 0.388 Earths, it takes 4 days to complete one orbit of its star, and is 0.02227 AU from its star. Its discovery was announced in 2016.",
       "discovery": "2016",
-      "radius": "0.788 x Earth",
-      "is_bigger": false,
-      "car_travel": "453 million years",
-      "distance": "41 light-years"
+			"radius_multiplier": 0.788,
+			"comparison": "Earth",
+      "is_bigger_than_earth": false,
+      "car_travel": "453",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "koi-55-b",
@@ -88,10 +90,12 @@
       "tagline": "A rocky world hotter than the Sun",
       "description": "Kepler-70b (a.k.a. KOI-55) could well be another circle of hell with an average temperature hotter than the Sun's surface. It used to be Jupiter-sized until it spent some time inside its now-dead star…a trip that destroys most planets, but left this one a Freddy Krueger-like burned world smaller than Earth. At about 12,000 degrees F (6,800 C), it is one of the hottest planets discovered. In fact, the planet itself is evaporating, soon to be another victim.",
       "discovery": "2011",
-      "radius": "0.759 x Earth",
-      "is_bigger": false,
-      "car_travel": "45 billion years",
-      "distance": "4,015 light-years"
+			"radius_multiplier": 0.759,
+			"comparison": "Earth",
+      "is_bigger_than_earth": false,
+      "car_travel": "45",
+			"unit_travel": "billion",
+      "distance": "4,015"
     },
     {
       "id": "psr-b1257+12-b",
@@ -101,10 +105,12 @@
       "tagline": "A rocky world bathed in radiation",
       "description": "PSR B1257+12 b, along with fellow doomed worlds, were among the first and creepiest to be discovered as they orbit an undead star known as a pulsar. Pulsar planets like Poltergeist and its neighboring worlds, Phobetor and Draugr, are consumed with constant radiation from the star's core.",
       "discovery": "1994",
-      "radius": "0.338 x Earth",
-      "is_bigger": false,
-      "car_travel": "22 billion years",
-      "distance": "1,957 light-years"
+			"radius_multiplier": 0.338,
+			"comparison": "Earth",
+      "is_bigger_than_earth": false,
+      "car_travel": "22",
+			"unit_travel": "billion",
+      "distance": "1,957"
     },
     {
       "id": "kepler-11-b",
@@ -114,10 +120,12 @@
       "tagline": "A rocky world outside our solar system",
       "description": "One of six planets squeezed in the most compact planetary system yet discovered. If placed inside our solar system, five planets would orbit between Mercury and our sun.",
       "discovery": "2010",
-      "radius": "1.8 x Earth",
-      "is_bigger": true,
-      "car_travel": "24 billion years",
-      "distance": "2,108 light-years"
+			"radius_multiplier": 1.8,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "24",
+			"unit_travel": "billion",
+      "distance": "2,108"
     },
     {
       "id": "55-cancri-e",
@@ -127,10 +135,12 @@
       "tagline": "A lava world with sparkling skies",
       "description": "This super hot world is covered in a global ocean of lava and has sparkling skies.",
       "discovery": "2004",
-      "radius": "1.8 x Earth",
-      "is_bigger": true,
-      "car_travel": "459 million years",
-      "distance": "41 light-years"
+			"radius_multiplier": 1.875,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "459",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "gj-1132-b",
@@ -140,10 +150,12 @@
       "tagline": "A World on its Second Atmosphere",
       "description": "GJ 1132 b may have begun as a mini-Neptune, but is now a rocky world a little bigger than Earth. The planet may have lost one atmosphere but gained another from volcanic activity.",
       "discovery": "2015",
-      "radius": "1.192 x Earth",
-      "is_bigger": true,
-      "car_travel": "460 million years",
-      "distance": "41 light-years"
+			"radius_multiplier": 1.192,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "460",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "kepler-186-f",
@@ -153,10 +165,12 @@
       "tagline": "A potentially rocky world, larger than Earth",
       "description": "Kepler-186 f is a super Earth exoplanet that orbits an M-type star. Its mass is 1.71 Earths, it takes 129.9 days to complete one orbit of its star, and is 0.432 AU from its star. Its discovery was announced in 2014.",
       "discovery": "2014",
-      "radius": "1.17, x Earth",
-      "is_bigger": true,
-      "car_travel": "6 billion years",
-      "distance": "579 light-years"
+			"radius_multiplier": 1.17,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "6",
+			"unit_travel": "billion",
+      "distance": "579"
     },
     {
       "id": "kepler-452-b",
@@ -166,10 +180,12 @@
       "tagline": "A potentially rocky world, larger than Earth",
       "description": "An \"Earth-cousin\" that orbits a star like our sun in the habitable zone, where liquid water could exist.",
       "discovery": "2015",
-      "radius": "1.63 x Earth",
-      "is_bigger": true,
-      "car_travel": "20 billion years",
-      "distance": "1,799 light-years"
+			"radius_multiplier": 1.63,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "20",
+			"unit_travel": "billion",
+      "distance": "1,799"
     },
     {
       "id": "kepler-22b",
@@ -179,10 +195,12 @@
       "tagline": "A potentially rocky world, larger than Earth",
       "description": "A possible ocean world orbiting in the habitable zone—the region around a star where the temperature is right for liquid water, a requirement for life on Earth.",
       "discovery": "2011",
-      "radius": "2.1 x Earth",
-      "is_bigger": true,
-      "car_travel": "7 billion years",
-      "distance": "635 light-years"
+			"radius_multiplier": 2.1,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "7",
+			"unit_travel": "billion",
+      "distance": "635"
     },
     {
       "id": "trappist-1-b",
@@ -192,10 +210,12 @@
       "tagline": "A potentially rocky world, larger than Earth",
       "description": "TRAPPIST-1 b is a super Earth exoplanet that orbits an M-type star. Its mass is 1.374 Earths, it takes 1.5 days to complete one orbit of its star, and is 0.01154 AU from its star. Its discovery was announced in 2016.",
       "discovery": "2016",
-      "radius": "1.116 x Earth",
-      "is_bigger": true,
-      "car_travel": "453 million years",
-      "distance": "41 light-years"
+			"radius_multiplier": 1.116,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "453",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "trappist-1-f",
@@ -205,10 +225,12 @@
       "tagline": "A potentially rocky world, larger than Earth",
       "description": "TRAPPIST-1 f is a super Earth exoplanet that orbits an M-type star. Its mass is 1.039 Earths, it takes 9.2 days to complete one orbit of its star, and is 0.03849 AU from its star. Its discovery was announced in 2017.",
       "discovery": "2017",
-      "radius": "1.045 x Earth",
-      "is_bigger": true,
-      "car_travel": "453 million years",
-      "distance": "41 light-years"
+			"radius_multiplier": 1.045,
+			"comparison": "Earth",
+      "is_bigger_than_earth": true,
+      "car_travel": "453",
+			"unit_travel": "million",
+      "distance": "41"
     },
     {
       "id": "au-microscopii-b",
@@ -216,12 +238,14 @@
       "image": "neptune-like-AU-Microscopii-b",
       "type": "neptune-like",
       "tagline": "A young planet blasted by its angry young star",
-      "description": "Located less than 32 light-years from Earth, AU Microscopii is among the youngest planetary systems ever observed by astronomers, and its star throws vicious temper tantrums!",
+      "description": "Located less than 32 from Earth, AU Microscopii is among the youngest planetary systems ever observed by astronomers, and its star throws vicious temper tantrums!",
       "discovery": "2020",
-      "radius": "0.35 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "355 million years",
-      "distance": "32 light-years"
+			"radius_multiplier": 0.35,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "355",
+			"unit_travel": "million",
+      "distance": "32"
     },
     {
       "id": "61-virginis-d",
@@ -231,10 +255,12 @@
       "tagline": "A Neptune-like giant planet",
       "description": "61 Virginis d is a Neptune-like exoplanet that orbits a G-type star. Its mass is 22.9 Earths, it takes 123 days to complete one orbit of its star, and is 0.476 AU from its star. Its discovery was announced in 2009.",
       "discovery": "2009",
-      "radius": "0.456 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "311 million years",
-      "distance": "28 light-years"
+			"radius_multiplier": 0.456,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "311",
+			"unit_travel": "million",
+      "distance": "28"
     },
     {
       "id": "corot-7-c",
@@ -244,10 +270,12 @@
       "tagline": "A Neptune-like giant planet",
       "description": "CoRoT-7 c is a Neptune-like exoplanet that orbits a K-type star. Its mass is 8.4 Earths, it takes 3.7 days to complete one orbit of its star, and is 0.046 AU from its star. Its discovery was announced in 2009.",
       "discovery": "2009",
-      "radius": "0.253 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "6 billion years",
-      "distance": "522 light-years"
+			"radius_multiplier": 0.253,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "6",
+			"unit_travel": "billion",
+      "distance": "522"
     },
     {
       "id": "gj-1151-c",
@@ -257,10 +285,12 @@
       "tagline": "A Neptune-like giant planet",
       "description": "GJ 1151 c is a Neptune-like exoplanet that orbits an M-type star. Its mass is 10.62 Earths, it takes 389.7 days to complete one orbit of its star, and is 0.5714 AU from its star. Its discovery was announced in 2023.",
       "discovery": "2023",
-      "radius": "0.253 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "293 million years",
-      "distance": "26 light-years"
+			"radius_multiplier": 0.29,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "293",
+			"unit_travel": "million",
+      "distance": "26"
     },
     {
       "id": "hats-38-b",
@@ -270,10 +300,12 @@
       "tagline": "A Neptune-like giant planet",
       "description": "HATS-38 b is a Neptune-like exoplanet that orbits a G-type star. Its mass is 23.51942 Earths, it takes 4.4 days to complete one orbit of its star, and is 0.05036 AU from its star. Its discovery was announced in 2020.",
       "discovery": "2020",
-      "radius": "0.614 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "13 billion years",
-      "distance": "1,120 light-years"
+			"radius_multiplier": 0.614,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "13",
+			"unit_travel": "billion",
+      "distance": "1,120"
     },
     {
       "id": "gl-686-b",
@@ -283,10 +315,12 @@
       "tagline": "A Neptune-like giant planet",
       "description": "Gl 686 b is a Neptune-like exoplanet that orbits an M-type star. Its mass is 6.624 Earths, it takes 15.5 days to complete one orbit of its star, and is 0.091 AU from its star. Its discovery was announced in 2018.",
       "discovery": "2018",
-      "radius": "0.22 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "298 million years",
-      "distance": "27 light-years"
+			"radius_multiplier": 0.22,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "298",
+			"unit_travel": "million",
+      "distance": "27"
     },
     {
       "id": "kepler-7b",
@@ -296,10 +330,12 @@
       "tagline": "A giant planet composed mainly of gas",
       "description": "A massive world called a hot Jupiter, Kepler-7b was the first exoplanet to have its clouds mapped.",
       "discovery": "2009",
-      "radius": "1.622 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "34 billion years",
-      "distance": "3,009 light-years"
+			"radius_multiplier": 1.622,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "34",
+			"unit_travel": "billion",
+      "distance": "3,009"
     },
     {
       "id": "hip-65426-b",
@@ -309,10 +345,12 @@
       "tagline": "A giant planet composed mainly of gas",
       "description": "HIP 65426 b is a gas giant exoplanet that orbits an A-type star. Its mass is 9 Jupiters, it takes 630.7 years to complete one orbit of its star, and is 92 AU from its star. Its discovery was announced in 2017. NASA's James Webb Space Telescope was used to directly image the planet in 2022.",
       "discovery": "2017",
-      "radius": "1.5 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "4 billion years",
-      "distance": "355 light-years"
+			"radius_multiplier": 1.5,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "4",
+			"unit_travel": "billion",
+      "distance": "355"
     },
     {
       "id": "toi-3757-b",
@@ -322,23 +360,27 @@
       "tagline": "A giant planet with the density of a marshmallow",
       "description": "A gas giant exoplanet with the density of a marshmallow has been detected in orbit around a cool red dwarf.",
       "discovery": "2022",
-      "radius": "1.071 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "7 billion years",
-      "distance": "591 light-years"
+			"radius_multiplier": 1.071,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "7",
+			"unit_travel": "billion",
+      "distance": "591"
     },
     {
       "id": "wasp-39-b",
       "name": "WASP-39 b",
       "image": "gas-giant-WASP-39-b",
       "type": "gas-giant",
-      "tagline": "First exoplanet studied by Webb: A gas giant 700 light-years away",
+      "tagline": "First exoplanet studied by Webb: A gas giant 700 away",
       "description": "WASP-39 b is a gas giant exoplanet that orbits a G-type star. Its mass is 0.28 Jupiters, it takes 4.1 days to complete one orbit of its star, and is 0.0486 AU from its star. Its discovery was announced in 2011. In July 2022 it became the first exoplanet to be studied by NASA's James Webb Space Telescope.",
       "discovery": "2011",
-      "radius": "1.27 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "8 billion years",
-      "distance": "698 light-years"
+			"radius_multiplier": 1.27,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "8",
+			"unit_travel": "billion",
+      "distance": "698"
     },
     {
       "id": "toi-849-b",
@@ -348,10 +390,12 @@
       "tagline": "A battered, blasted world",
       "description": "A world called TOI 849 b could be the exposed, naked core of a gas giant whose atmosphere was blasted away by its star.",
       "discovery": "2020",
-      "radius": "0.325 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "8 billion years",
-      "distance": "736 light-years"
+			"radius_multiplier": 0.325,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "8",
+			"unit_travel": "billion",
+      "distance": "736"
     },
     {
       "id": "hd-189733-b",
@@ -361,10 +405,12 @@
       "tagline": "A giant planet where it rains glass",
       "description": "This far-off blue planet may look like a friendly haven - but don't be deceived! Weather here is deadly. The planet's cobalt blue color comes from a hazy, blow-torched atmosphere containing clouds laced with glass.",
       "discovery": "2005",
-      "radius": "1.13 x Jupiter",
-      "is_bigger": true,
-      "car_travel": "721 million years",
-      "distance": "64 light-years"
+			"radius_multiplier":1.13,
+			"comparison": "Jupiter",
+      "is_bigger_than_earth": true,
+      "car_travel": "721",
+			"unit_travel": "million",
+      "distance": "64"
       }
   ]
   }

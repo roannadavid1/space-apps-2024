@@ -64,8 +64,9 @@ const gallery_planets = cloneObject(planets)
 gallery_planets.forEach((planet) => {
 	const type = gallery_types.value.find((c) => c.id == planet.type)
 	if (!type.planets) {
-		type.planets = []
+		type.planets = [];
 	}
+	planet.type_name = type.name;
 	type.planets.push(planet)
 })
 

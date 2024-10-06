@@ -1,17 +1,17 @@
 <template>
-	<div class="h-full overflow-hidden">
-		<div class="w-full h-full z-10 flex flex-col justify-center items-center absolute">
+	<div class="w-full h-full overflow-hidden">
+		<div class="w-full h-full flex flex-col justify-center items-center overflow-hidden">
 			<h1 class="font-main text-white text-4xl text-center">Exoplanets</h1>
 			<div class="mt-4 flex flex-row font-main text-white">
 				&nbsp;
 				<ClientOnly>
-					<p class="trivia text-center">"{{trivia}}"</p>
+					<p class="trivia text-center text-sm">"Exoplanets are planets outside of our solar system that usually orbit another planets."</p>
 				</ClientOnly>
 				&nbsp;
 			</div>
 			<div class="w-[4/5] h-2/5 mt-4 mb-8 flex justify-center items-center cursor-pointer">
 				<ClientOnly>
-					<NuxtImg :src="'/images/' + home_image" class="w-full h-full object-contain" @click="randomize()"/>
+					<NuxtImg :src="'/images/' + home_image" class="w-full h-full object-contain" @click="getRandomPlanet()"/>
 				</ClientOnly>
 			</div>
 			<div class="w-60 h-12 text-xl">
@@ -29,23 +29,11 @@
 </template>
 
 <script setup>
-import { trivia_list, planets } from '@/assets/data.json'
-
-const trivia = ref('')
-let prev_trivia = null
-function getRandomTrivia() {
-	let random_index = Math.floor(Math.random() * trivia_list.length);
-	while(prev_trivia == random_index) {
-		random_index = Math.floor(Math.random() * trivia_list.length);
-	}
-	trivia.value = trivia_list[random_index];
-	prev_trivia = random_index;
-}
-getRandomTrivia();
+import { planets } from '@/assets/data.json'
 
 const home_image = ref('')
 let prev_image = null
-function getRandomImage() {
+function getRandomPlanet() {
 	let random_index = Math.floor(Math.random() * planets.length);
 	while(prev_image == random_index) {
 		random_index = Math.floor(Math.random() * planets.length);
@@ -53,12 +41,7 @@ function getRandomImage() {
 	home_image.value = planets[random_index].image + '.jpg';
 	prev_image = random_index;
 }
-getRandomImage();
-
-function randomize() {
-	getRandomImage();
-	getRandomTrivia();
-}
+getRandomPlanet();
 
 function goGame() {
 	navigateTo('/game')
