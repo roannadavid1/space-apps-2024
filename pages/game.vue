@@ -22,7 +22,7 @@
 
 <script setup>
 import { useGameStore } from '~/store/game'
-import { planets } from '@/assets/data.json'
+import { types, planets } from '@/assets/data.json'
 
 const gameStore = useGameStore()
 
@@ -66,6 +66,8 @@ function setGame() {
 
   game_array.value.forEach((card, index) => {
     card.index = index;
+    const type = types.find((c) => c.id == card.type)
+    card.type_name = type.name;
   });
 }
 
