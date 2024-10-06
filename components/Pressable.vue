@@ -1,7 +1,7 @@
 <template>
 	<div class="pressable w-full h-full duration-100 cursor-pointer" :class="{'pressed': pressed}"
 		@mousedown="pressed = true" @mouseup="pressed = false"
-		@touchstart="pressed = true" @touchend="pressed = false"
+		@touchstart.passive="pressed = true" @touchend.passive="pressed = false"
 	>
 		<slot />
 	</div>
