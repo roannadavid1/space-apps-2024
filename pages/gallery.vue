@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full h-full overflow-hidden">
-		<div class="flex flex-row justify-between items-center h-8 text-white font-main mb-8">
+		<div class="flex flex-row justify-between items-center h-8 text-white font-main mb-4">
 			<div class="flex flex-row">
 				<button class="size-6 mr-4" @click="$router.back()">
 					<Pressable>
@@ -21,6 +21,11 @@
 				</div>
 			</NuxtLink>
 		</div>
+		<div class="h-4 text-amber-300 text-sm font-body text-right mb-4" @click="show_name_popup = true">
+      <Pressable>
+        <span class="underline">Exoplanet name meaning</span>
+      </Pressable>
+    </div>
 		<div class="gallery overflow-scroll">
 			<div v-for="(type, index) in gallery_types" :class="[index == 0 ? 'mt-2' : 'mt-8', index == gallery_types.length - 1 ? 'mb-8' : '']">
 				<details open class="bg-black">
@@ -49,6 +54,8 @@
 
 		<ViewPopup v-if="show_view_popup" :item="planet_to_view" @close="show_view_popup = false" />
 
+	  <NamePopup v-if="show_name_popup" @close="show_name_popup = false"/>
+		
 	</div>
 </template>
   
@@ -56,6 +63,8 @@
 import { types, planets } from '@/assets/data.json'
 
 const router = useRouter()
+
+const show_name_popup = ref(false)
 
 const gallery_types = ref([])
 gallery_types.value = cloneObject(types)

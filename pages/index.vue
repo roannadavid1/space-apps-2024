@@ -9,10 +9,18 @@
 				</ClientOnly>
 				&nbsp;
 			</div>
-			<div class="w-[4/5] h-2/5 mt-4 mb-8 flex justify-center items-center cursor-pointer">
+			<div class="w-4/5 aspect-square mt-4 mb-4 flex flex-col justify-center items-center cursor-pointer">
 				<ClientOnly>
-					<NuxtImg :src="'/images/' + home_image" class="w-full h-full object-contain" @click="getRandomPlanet()"/>
+					<NuxtImg :src="`/images/${planet.image}.jpg`" class="w-full h-full object-contain" @click="getRandomPlanet()"/>
 				</ClientOnly>
+				<p class="w-full text-white text-sm mt-2 font-body flex flex-row items-center justify-center">
+					{{ planet.name }}
+					<div class="h-4 w-4">
+						<Pressable @click="show_name_popup = true">
+							<img src="@/assets/images/info.svg" class="invert h-4 ml-4"/>
+						</Pressable>
+					</div>
+				</p>
 			</div>
 			<div class="w-60 h-12 text-xl">
 				<Pressable @click="goGame" class="font-main text-white bg-amber-400 shadow-md shadow-white/20 rounded-full p-2 flex items-center justify-center">
@@ -26,19 +34,23 @@
 			</div>
 		</div>
 	</div>
+
+	<NamePopup v-if="show_name_popup" @close="show_name_popup = false"/>
 </template>
 
 <script setup>
 import { planets } from '@/assets/data.json'
 
-const home_image = ref('')
+const show_name_popup = ref(false)
+
+const planet = ref('')
 let prev_image = null
 function getRandomPlanet() {
 	let random_index = Math.floor(Math.random() * planets.length);
 	while(prev_image == random_index) {
 		random_index = Math.floor(Math.random() * planets.length);
 	}
-	home_image.value = planets[random_index].image + '.jpg';
+	planet.value = planets[random_index];
 	prev_image = random_index;
 }
 getRandomPlanet();

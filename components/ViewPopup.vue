@@ -70,16 +70,16 @@
     <div class="grid grid-cols-2 gap-2 place-items-center my-2 font-body">
       <div class="text-center bg-slate-100 w-full py-2 rounded">
         <span class="text-sm">How far away<br>from Earth?</span>
-        <p class="flex flex-row items-center justify-center text-3xl font-main mt-4 text-blue-800">
-          <img src="@/assets/images/flashlight.svg" class="h-8 mr-2"/>
+        <p class="flex flex-row items-center justify-center text-2xl font-main mt-4 text-blue-800">
+          <img src="@/assets/images/flashlight.svg" class="h-7 mr-2"/>
           {{ item.distance }}
         </p>
         <span class="text-sm font-main text-blue-800">light-years</span>
       </div>
       <div class="text-center bg-slate-100 w-full py-2 rounded">
         <span class="text-sm">Travel time by<br>car (60mph)</span>
-        <p class="flex flex-row items-center justify-center text-3xl font-main mt-4 text-blue-800">
-          <img src="@/assets/images/car.svg" class="h-8 mr-2"/>
+        <p class="flex flex-row items-center justify-center text-2xl font-main mt-4 text-blue-800">
+          <img src="@/assets/images/car.svg" class="h-7 mr-2"/>
           {{ item.car_travel }}
         </p>
         <span class="text-sm font-main text-blue-800">{{ item.unit_travel }} years</span>
